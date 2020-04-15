@@ -1,39 +1,33 @@
-<html>
-<title>TCR</title>
-<center>
-<html> 
-<div class="content">
-   <head> 
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title> The Chef's Recipe </title> 
-          
-        <!-- add icon link -->
-        <link rel = "icon" href =  
-"https://cdn6.f-cdn.com/contestentries/955165/16433855/58a7fb653fdc3_thumb900.jpg"
-        type = "image/x-icon"> 
-         <br><br><br><br><br><br><br><br><font size="30" color="brown"><b>The Chef's Recipe</b></font><br><br>
-    </head> 
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>tcr</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <style>
 body {
 font-family: "Courier New", Courier, monospace;	
 
 
-  background-image: url('https://previews.123rf.com/images/aliaksei7799/aliaksei77991610/aliaksei7799161000042/67664491-cookbook-logo.jpg');
+  background-image: url('https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/powerhouse_vegetables_slideshow/650x350_powerhouse_vegetables_slideshow.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100%;
 
 }
+
+
 .content {
   max-width: 700px;
   margin: auto;
   padding: 80px;
   text-align: center;
   /*background: #1abc9c;*/
- /* color: white;*/
+ /* color: white;*/  
 }
 * {
 box-sizing: border-box;
@@ -57,6 +51,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Set a style for all buttons */
 button {
+
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -73,14 +68,14 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-  padding: 14px 20px;
+ /* padding: 14px 20px;*/
   background-color: #f44336;
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .btn {
+/*.cancelbtn, .btn {
   float: left;
-  width: 50%;
+  width: 50%;*/
 }
 
 /* Add padding to container elements */
@@ -107,7 +102,7 @@ button:hover {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 100%; /* Could be more or less, depending on screen size */
 }
 
 /* Style the horizontal ruler */
@@ -141,41 +136,205 @@ hr {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .btn {
-     width: 100%;
+  .cancelbtn, .signupbtn, .loginbtn {
+     width: 50%;
   }
 }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.content {
+  max-width: 1700px;
+  margin: auto;
+  padding: 80px;
+  text-align: center;
+  /*background: #1abc9c;*/
+ /* color: white;*/
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+
+}
+
+/* Left column (menu) */
+.left {
+  height: 1000px;
+
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  height: 1000px;
+
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 1%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  /*border: 1px solid #ddd;*/
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  display: block
+  width : 30%
+}
+
+#myMenu li a:hover {
+  background-color: #ff9999;
+}
+
+
+
+
+.tab {
+  float: left;
+  border: 1px solid #ff9999;
+  background-color: #ff9999;
+  width: 28%;
+  height: 650px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: #ff9999;
+  color: red;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ff9999;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ff9999;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ff9999;
+  width: 70%;
+    background-color: #ff9999;
+
+  border-left: none;
+  height:650px;
+  
+  display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
 </style>
 <body>
+
+<font size="30" color="orange"><center><b>The Chef's Recipe</b></center></font>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#login">Login</a></li>
+    <li><a href="#home" >Home</a></li>
+  </ul>
+
+  <!--<div class="tab-content">-->
+    <div class="tab-pane fade in active">
+      
+<!--<div class="content">-->
+<center>
 If new user<br>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:100%">Sign Up</button><br>Or<br> 
+<button onclick="document.getElementById('id01').style.display='block'" style="width:100%" color="red">Sign Up</button><br>Or</center><br> 
 
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
+  <form class="modal-content" action="  ">
     <div class="container">
-      <h1>Sign Up</h1>
+      <center><h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+       <label for="email"><b>Email</b></label> 
+      <input type="text" placeholder="Enter Email" name="email" required><br>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+       <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
 
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+       <label for="psw-repeat"><b>Repeat Password</b></label></center> 
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
       
-     <!-- <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
-
+     
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="btn" onclick="myFunction()">Sign Up</button>
+        <button type="submit" class="signupbtn" onclick="myFunction2()">Sign Up</button>
       </div>
     </div>
   </form>
@@ -190,51 +349,219 @@ If new user<br>
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <form class="modal-content" action="/action_page.php">
     <div class="container">
-      <h1>Login</h1>
+      <center><h1>Login</h1>
       <hr>
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" required>
 
-      <label for="psw"><b>Password</b></label>
+      <label for="psw"><b>Password</b></label></center>
       <input type="password" placeholder="Enter Password" name="psw" required>
-<!--
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-     <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
 
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="btn" formaction="file:///C:/Users/Anusha/Desktop/home.html" >login</button>
+        <button type="submit" class="loginbtn" onclick="myFunction1()" >Login</button>
       </div>
     </div>
   </form>
 </div>
-<script>
+</div>
+    
+    <div class="tab-pane fade">
+     <!-- <div id="myDIV" class="content">-->
+<font color="800000" style="Courier New">
 
-// Get the modal
-var modal = document.getElementById('id01');
-var modal1 = document.getElementById('id02');
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-   else if (event.target == modall) {
-    modall.style.display = "none";
-  }
-}
-function myFunction() {
-  alert("login to get all recipes");
+<!--<div class="row">-->
+  <div class="tab" style="background-color:#bbb;">
+  	<h1>Search Recipes</h1>
+
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li class="tablinks" onmouseover="openCity(event, 'id1')"><a href="#id1">Tea</a></li>
+      <li class="tablinks" onmouseover="openCity(event, 'id2')"><a href="#id2">Coffee</a></li>
+      <li class="tablinks" onmouseover="openCity(event, 'id3')"><a href="#id3">Cake</a></li>
+      <li class="tablinks" onmouseover="openCity(event, 'id4')"><a href="#id4">Soup</a></li>
+      <li class="tablinks" onmouseover="openCity(event, 'id5')"><a href="#id5">Milkshake</a></li>
+      <li class="tablinks" onmouseover="openCity(event, 'id6')"><a href="#id6">Fries</a></li>
+      <li class="tablinks" onmouseover="openCity(event, 'id7')"><a href="#id7">Chips</a></li>
+      <li class="tablinks" onmouseover="openCity(event, 'id8')"><a href="#id8">Omelette</a></li>
+    </ul>
+  </div>
+
+  <div class="tabcontent" style="background-color:#ddd;" id="id1">
+  <h1>Tea</h1>
+    <h2>Ingredients</h2>
+You’ll need roughly one part milk to two parts water, lots of tea leaves or tea bags, strong infusion, plenty of sugar, and optional addition of sweet spices.<br>
+
+<h2>Here’s how to make Indian chai tea at home:</h2><br>
+
+Bring water, milk and chai spices to a simmer in a small saucepan on the stove.<br>
+Reduce heat and add in black tea.<br>
+Wait for tea to steep.<br>
+Strain the warm spiced mixture into a mug; this will hold back the whole spices and tea leaves.<br>
+Stir sugar into your chai and sweeten to taste.<br>
+  </div>
+  <div class="tabcontent" style="background-color:#ddd;" id="id2">
+    <h1>Iced Coffee</h1>
+   <h2> Ingredients</h2>
+brewed coffee<br>
+ice<br>
+sugar, optional<br>
+milk, optional<br>
+<h2>Preparation</h2>
+Brew coffee according to your usual method. While coffee is brewing, prepare an ice bath by filling a large bowl with ice and cold water.<br>
+
+Stir sugar into hot coffee until dissolved (about 1 teaspoon per cup of coffee for not-too-sweet). Pour into a large freezer bag, seal, and immediately submerge in the ice bath. Chill about 10 minutes, until cool, replenishing ice as it melts.<br>
+
+Open zipper top, and pour coffee into ice-filled glasses. Top with milk, if desired, and stir.<br>
+  </div><div class="tabcontent" style="background-color:#ddd;" id="id3">
+    <h1>Cake</h2>
+	<h2>Ingredients</h2>
+    
+1 3/4 cups all purpose flour<br>
+2 cups granulated white sugar<br>
+3/4 cup unsweetened cocoa powder<br>
+1 1/2 tsp baking soda<br>
+3/4 teaspoon salt<br>
+2 large eggs<br>
+1 cup buttermilk or substitute by putting 1 tbsp white vinegar in a cup then filling the rest up with milk; let stand 5 minutes until thickened
+<br>1/2 cup butter melted<br>
+1 tbsp vanilla extract<br>
+1 cup hot coffee or 2 tsp instant coffee in 1 cup boiling water<br>
+<h2>Instructions</h2>
+Preheat oven to 350 degrees. Grease and flour two 9-inch baking pans (or line with parchment paper circles) and set aside.
+<br>In the large bowl of a standing mixer, stir together flour, sugar, cocoa, baking soda, and salt. Add eggs, buttermilk, melted butter and vanilla extract and beat until smooth (about 3 minutes). Remove bowl from mixer and stir in hot coffee with a rubber spatula. Batter will be very runny.
+<br>Pour batter evenly between the two pans and bake on middle rack of oven for about 35 minutes, until toothpick inserted in centre comes out clean with just a few moist crumbs attached.
+
+<br>Allow to cool 15 minutes in pans, then run a butter knife around the edges of each cake. Place a wire cooling rack over top of each pan. Wearing oven mitts, use both hands to hold the racks in place while flipping the cakes over onto the racks. Set the racks down and gently thump on the bottom of the pans until the cakes release. Cool completely before handling or frosting.
+  </div><div class="tabcontent" style="background-color:#ddd;" id="id4">
+    <h1>soup</h1>
+	<h2>Ingredients</h2>
+    
+1/4 cup butter<br>
+1 onion<br>
+salt<br>
+2" piece of fresh ginger finely grated<br>
+4 cups roasted pumpkin<br>
+4 cups broth<br>
+1/2 tsp  ground cayenne<br>
+1/4 tsp freshly-ground black pepper<br>
+2 cups cooked basmati rice<br>
+chili oil to finish<br>
+<h2>Instructions</h2>
+Melt butter in a large dutch oven or soup pot over medium heat. Add onions and a good pinch of salt and saute until completely soft and translucent, about 12 minutes. Add ginger and saute 30 seconds, until fragrant. 
+<br>Stir in pumpkin, broth, cayenne and pepper, plus another good pinch of salt. Bring to a boil. Mash and break up the pumpkin chunks with a wooden spoon.  Simmer 10 minutes. Taste the soup and add more salt a pinch at a time until it tastes vibrant and well seasoned. (The total amount will depend on how salty your broth and roasted pumpkin were).
+
+<br>Stir in cooked rice and simmer until heated through. Ladle into bowls and serve with chili oil.
+  </div><div class="tabcontent" style="background-color:#ddd;" id="id5">
+    <h1>Milkshake</h1>
+    <h2>Ingredients</h2>
+3 cups frozen watermelon chunks<br>
+1 cup milk<br>
+2 tbsp granulated sugar<br>
+<h2>Preparation</h2>
+Combine all ingredients in a blender and process to milkshake consistency. Taste and add more sugar as needed.
+  </div><div class="tabcontent" style="background-color:#ddd;" id="id6">
+    <h1>Fries</h1>
+	<h2>Ingredients</h2>
+1 1/2 lbs yam this was one giant yam for me, cut into matchsticks<br>
+1-2 tbsp all purpose flour<br>
+4 tbsp olive oil<br>
+1 1/2 tsp paprika<br>
+1/4 tsp cayenne<br>
+sea salt<br>
+1/3 cup mayonnaise<br>
+2 tsp minced chipotle in adobo sauce or 1/2-1 tsp chipotle powder<br>
+<h2>Instructions</h2>
+Preheat oven to 450 degrees.
+Place yam matchsticks in a large bowl and sprinkle with 1 tablespoon flour, tossing until evenly coating and adding up to one tablespoon more if needed.
+Drizzle with olive oil and toss. Sprinkle with spices and a good pinch of sea salt. Toss until fries are evenly coated.
+Line baking sheets with parchment paper. Spread fries out in a SINGLE LAYER (no overlap whatsoever, or they will steam and get soggy). You will probably need 2 baking sheets. Bake for 10 minutes, then flip fries (and rotate baking sheets if using more than 1). Bake 10 minutes more, or until fries are crisp and tender in the middles.
+
+Meanwhile, make Chipotle Aioli by whisking 1/3 cup mayonnaise with minced chipotle with sauce. Add more to taste, if you like it spicier!
+  </div>
+  <div class="tabcontent" style="background-color:#ddd;" id="id7">
+    <h1>Chips</h1>
+	<h2>Ingredients</h2>
+    
+1 bunch kale, 6 to 8 stems or 12 ounces
+<br>2 tbsp olive oil
+<br>2 tsp balsamic vinegar (*I used regular white vinegar because I was going for a salt & vinegar chips flavour from my childhood thing – it was subtle, but nice!)
+<br>kosher salt
+<h2>Preparation</h2>
+Preheat oven to 350 degrees F.
+<br>Wash the kale, dry thoroughly in a salad spinner, and tear into bite-size pieces. Toss in a large bowl with the olive oil and balsamic vinegar, if desired. Rub the leaves to make sure each gets a coating of oil so they crisp up well. Oil a baking sheet. (*I forgot this step, and there was plenty of oil to prevent sticking without it).
+<br>Place the kale in a single layer on the baking sheet. Sprinkle with kosher salt to taste. Bake for 6 minutes, then stir and turn kale, and bake for 6-9 minutes longer. Remove crisp pieces as they are done to prevent burning and allow remaining kale chips to get even heat. (*in order to do a single layer, I needed two baking sheets. A single layer is important for crispy results, rather than steaming them. By using 2 sheets I avoided the need to remove crisp pieces as they were done, and the kale was crisp after about 9 minutes total).
+  </div><div class="tabcontent" style="background-color:#ddd;" id="id8">
+<h1>omelette</h1>   
+   <h2>Ingredients</h2>
+    
+5 large eggs<br>
+1/2 tsp kosher salt<br>
+1/2 cup diced tomatoes<br>
+1/4 cup finely chopped red onion<br>
+2 tbsp minced jalapeño or 1/2 - 1 green bird's eye chile<br>
+2 tbsp vegetable oil<br>
+pita bread or tortilla/roti for serving<br>
+mayo for serving<br>
+Indian mango pickle achaar, for serving (optional)<br>
+<h2>Instructions</h2>
+Heat a large cast iron skillet over medium-high heat. Meanwhile, vigorously beat eggs with salt using a fork until they increase a bit in volume. Stir in tomatoes, red onion, and jalapeño.
+<br>Heat oil in skillet until shimmering hot. Give eggs another quick beat, then pour into skillet, tilting to spread evenly. Cook until underside is set and golden brown (about a minute), then fold the sides in toward the centre. Flip the omelette, turn off the heat, and let stand until the centre is set - about two minutes.
+
+<br>Serve with pita bread or tortilla with a thin spreading of mayo and mango pickle on the side, if you like! Use the bread to pick up the egg.
+  </div>
+
+  </div>
+  <script>
+function myFunction1() {
+  alert("go to home page to view recipes");
 }
 </script>
 
+<script>
+function myFunction2() {
+  alert("now login to go to home page");
+}
+</script>
+<script>
+$(document).ready(function(){
+  $(".nav-tabs a").click(function(){
+    $(this).tab('show');
+  });
+});
+</script>
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
 </body>
-</div>
 </html>
-
